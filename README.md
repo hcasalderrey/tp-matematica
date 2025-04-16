@@ -5,11 +5,8 @@
 
 - Este ejercicio integrador de las areas de matematica y programación fue realizador por... {nombres}
 
-📌 **login.py**  
+📌 **mcpython.py**  
 
-- Es un sistema de login en el cual se conoce previamente el acceso, pero se deja que el usuario pueda ingresar los valores correspondientes
-se usa la libreria getpass para que no se vea la contraseña y se usa la librería time para tomar los datos de la hora.
-
-- Para la contraseña y la hora de acceso se convierten en binario para poder tener una encriptación básica.
-  
+Se ingresa al menú se selecciona el pedido requerido y se ingresa si tiene promociones de descuento
+una vez que elije todas las opciones y las promo, le informa el total del pedido
   
