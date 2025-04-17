@@ -2,6 +2,8 @@ hamb = 0
 papas = 0
 bebida = 0
 queso = 0 
+promo_galicia = 0
+promo_otra = 0
 
 # Definición de precios
 precio_hamburguesa = 8100.0
@@ -12,11 +14,21 @@ precio_queso = 150.0
 pedido_cancelado = False
 
 def mostrar_menu():
+
+    global hamb
+    global papas
+    global bebida
+    global queso
+    global promo_galicia
+    global promo_otra
+
+
     hamb = 1
     papas = 0
     bebida = 0
     queso = 0 
-
+    promo_galicia = 1
+    promo_otra = 0
     
 
 #opcion = -1  # Inicializamos con un valor que no sea 0
@@ -26,21 +38,30 @@ mostrar_menu()
     #opcion = int(input("Elige una opción: "))
     #pedido.append(opcion) 
 
-promo_galicia = input("Tienes promo galicia? Si / No: \n")
-if promo_galicia.lower() == "si":
-    promo_galicia = 1
-    promo_otra = 0
-else:
-    promo_otra = input("Tienes otra promo? Si / No: \n")
-    if promo_otra.lower() == "si":
-        promo_otra = 1
-        promo_galicia = 0
-    else:
-        promo_otra = 0
-        promo_galicia = 0
+#promo_galicia = input("Tienes promo galicia? Si / No: \n")
+#if promo_galicia.lower() == "si":
+#    promo_galicia = 1
+#    promo_otra = 0
+#else:
+#    promo_otra = input("Tienes otra promo? Si / No: \n")
+#    if promo_otra.lower() == "si":
+#        promo_otra = 1
+#        promo_galicia = 0
+#    else:
+#        promo_otra = 0
+#        promo_galicia = 0
 
 total =0.0
 
+if hamb == 1:
+    total += precio_hamburguesa
+if bebida == 1:
+    total += precio_coca
+if papas == 1:
+    total += precio_papas
+if queso == 1:
+    total += precio_queso
+    
  
 
 pago_permitido = False
