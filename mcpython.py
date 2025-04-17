@@ -4,32 +4,26 @@ bebida = 0
 queso = 0 
 
 # Definición de precios
-precio_hamburguesa = 10.0
-precio_coca = 5.0
-precio_papas = 3.0
-precio_queso = 2.0
+precio_hamburguesa = 8100.0
+precio_coca = 3200.0
+precio_papas = 3500.0
+precio_queso = 150.0
 
 pedido_cancelado = False
 
 def mostrar_menu():
-    print("-----------------------------------------------")
-    print("|           Menú de opciones:                 |")
-    print("-----------------------------------------------")
-    print(f"1. hamburguesa :           ${precio_hamburguesa}")
-    print(f"2. Coca-Cola :             ${precio_coca}")
-    print(f"3. papas fritas :          ${precio_papas}")
-    print(f"4. adicional de queso :    ${precio_queso}")
-    print("-----------------------------------------------")
-    print("0. salir")
-    print("-----------------------------------------------")
+    pedido.append(1)
+    pedido.append(0)
+    pedido.append(0)
+    pedido.append(0) 
     
 
-opcion = -1  # Inicializamos con un valor que no sea 0
+#opcion = -1  # Inicializamos con un valor que no sea 0
 pedido = []  # Lista para almacenar los pedidos
-while opcion != 0:
-    mostrar_menu()
-    opcion = int(input("Elige una opción: "))
-    pedido.append(opcion) 
+#while opcion != 0:
+mostrar_menu()
+    #opcion = int(input("Elige una opción: "))
+    #pedido.append(opcion) 
 
 promo_galicia = input("Tienes promo galicia? Si / No: \n")
 if promo_galicia.lower() == "si":
@@ -46,6 +40,9 @@ else:
 
 total =0.0
 
+#quiero recorrer el pedido y sumar los precios de cada item, pero viene en formato de lista con 1 o 0 cada una de las 4 opciones
+#este es el formato 1000 que es hamburguesa, 0 bebida, 0 papas, 0 queso
+
 for item in pedido:
     if item == 1:
         hamb = 1
@@ -59,6 +56,22 @@ for item in pedido:
     elif item == 4:
         queso  = 1
         total +=precio_queso
+
+
+
+#for item in pedido:
+#    if item == 1:
+#        hamb = 1
+#        total +=precio_hamburguesa
+#    elif item == 2:
+#        bebida= 1
+#        total +=precio_coca
+#    elif item == 3:
+#        papas= 1
+#        total +=precio_papas
+#    elif item == 4:
+#        queso  = 1
+#        total +=precio_queso
 
 pago_permitido = False
 promo_valida = promo_galicia ^ promo_otra
