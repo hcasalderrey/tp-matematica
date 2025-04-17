@@ -13,9 +13,9 @@ pedido_cancelado = False
 
 def mostrar_menu():
     pedido.append(1)
-    pedido.append(0)
-    pedido.append(0)
-    pedido.append(0) 
+    pedido.append(2)
+    pedido.append(3)
+    pedido.append(4) 
     
 
 #opcion = -1  # Inicializamos con un valor que no sea 0
@@ -57,21 +57,6 @@ for item in pedido:
         queso  = 1
         total +=precio_queso
 
-
-
-#for item in pedido:
-#    if item == 1:
-#        hamb = 1
-#        total +=precio_hamburguesa
-#    elif item == 2:
-#        bebida= 1
-#        total +=precio_coca
-#    elif item == 3:
-#        papas= 1
-#        total +=precio_papas
-#    elif item == 4:
-#        queso  = 1
-#        total +=precio_queso
 
 pago_permitido = False
 promo_valida = promo_galicia ^ promo_otra
