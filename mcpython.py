@@ -5,12 +5,7 @@ import random  # Importamos el módulo random para simular elecciones aleatorias
 hamb = 0            # Hamburguesa
 papas = 0           # Papas
 bebida = 0          # Bebida
-Expandir
-mcpython.py
-4 KB
-﻿
-Cristiano.B
-cristianobustamante
+queso = 0           # Queso extra
  
  
 import random  # Importamos el módulo random para simular elecciones aleatorias del usuario
