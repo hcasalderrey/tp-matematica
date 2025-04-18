@@ -1,13 +1,5 @@
-
-import random  # Importamos el módulo random para simular elecciones aleatorias del usuario
-
-# Inicialización de variables (productos y promociones)
-hamb = 0            # Hamburguesa
-papas = 0           # Papas
-bebida = 0          # Bebida
-queso = 0           # Queso extra
- 
- 
+# mcPython.py
+#  
 import random  # Importamos el módulo random para simular elecciones aleatorias del usuario
 
 # Inicialización de variables (productos y promociones)
