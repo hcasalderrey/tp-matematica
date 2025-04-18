@@ -3,7 +3,13 @@
 **Tecnicatura Universitaria en Programación**  
 📍 *Universidad Tecnológica Nacional*  
 
-- Este ejercicio integrador de las areas de matematica y programación fue realizador por... {nombres}
+- Este ejercicio integrador de las areas de matematica y programación fue realizador por:
+- *Marianela Albrigi*
+- *Christian Bustamante*
+- *Hernán Casalderrey*
+- *Ignacio Almonacid*
+
+**Lógica booleana en la vida cotidiana: Ejemplo aplicado a la solicitud de un pedido**  
 
 📌 **mcpython.py**  
 
